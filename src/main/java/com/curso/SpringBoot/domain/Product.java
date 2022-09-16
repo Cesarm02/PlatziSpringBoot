@@ -3,7 +3,7 @@ package com.curso.SpringBoot.domain;
 public class Product {
 
     private int productId;
-    private String productName;
+    private String name;
     private int categoryId;
     private double price;
     private int stock;
@@ -18,12 +18,12 @@ public class Product {
         this.productId = productId;
     }
 
-    public String getProductName() {
-        return productName;
+    public String getName() {
+        return name;
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getCategoryId() {

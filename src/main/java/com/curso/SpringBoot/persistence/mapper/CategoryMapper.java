@@ -22,7 +22,6 @@ public interface CategoryMapper {
     //Con esta anotación se hace lo contrario de category a categoria
     //Pero no es necesario mappear campo por campo
     @InheritInverseConfiguration
-    //Con esta anotación ignoramos el campo que no va en el mappeo
     @Mapping(target = "productos", ignore = true)
     Categoria toCategoria(Category category);
 

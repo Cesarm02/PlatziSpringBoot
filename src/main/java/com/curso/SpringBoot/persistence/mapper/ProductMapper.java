@@ -28,6 +28,8 @@ public interface ProductMapper {
     List<Product> toProducts(List<Producto> productos);
 
     //Toma los mapeos de forma inversa
+    //Con esta anotación ignoramos el campo que no va en el mappeo
+
     @InheritInverseConfiguration
     @Mapping(target = "codigoBarras", ignore = true)
     Producto toProducto(Product product);
